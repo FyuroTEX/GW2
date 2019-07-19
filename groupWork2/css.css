@@ -1,0 +1,9 @@
+.paralelogram, form {
+    display: flex;
+}
+/* rect {
+   
+    transform: translate(140px, 105px)
+               skewX(-20deg)
+               translate(-140px, -105px);
+  } */

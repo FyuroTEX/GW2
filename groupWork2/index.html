@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css.css" />
+   
+</head>
+<body>
+    <div class="paralelogram">
+    <svg width="300" height="200" >
+        <!-- <rect x="50" y="50" width="90" height="60" stroke="black" fill="transparent" stroke-width="5"/> -->
+        <rect x="50" y="50" transform='translate(140 105) skewX(-40) translate(-140 -105)' width='40%' height='30%'  stroke="black" fill="transparent" stroke-width="5"/>
+        <!-- <path d="M10 140 H 190 L 220 70 H 50 Z" transform='skewX(50)' stroke="black" fill="transparent" stroke-width="5"/>       -->
+        <!-- <polyline points="10 240, 165 240, 195 170, 45 170, 10 240" stroke="black" fill="transparent" stroke-width="5"/>       -->
+        </svg>
+        <form action="calculate" method="get" class="prg">
+                <div class="prg">
+                  <label for="aside">A: </label>
+                  <input type="number" name="aside" id="prgAside">
+                </div>
+                <div class="prg">
+                  <label for="bside">B: </label>
+                  <input type="number" name="bside" id="prgBside">
+                </div>
+                <div class="prg">
+                  <label for="angle">Angle: </label>
+                  <input type="number" name="angle" id="prgAngle">
+                </div>
+              </form>
+              <div class="paralelogramResult"> <p class="prgArea">Area: <span>-</span></p><p class="prgHight">h: <span>-</span></p> </div>
+    </div>
+</body>
+<script src="./index.js"></script>
+</html>
